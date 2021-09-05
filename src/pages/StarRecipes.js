@@ -75,7 +75,7 @@ function StarRecipes() {
             >
               <div className="star-img-container">
                 <Link
-                  to={ `/${recipe
+                  to={ `/recipesAPP/${recipe
                     .type === 'comida' ? 'comidas' : 'bebidas'}/${recipe.id}` }
                 >
                   <img
@@ -95,7 +95,7 @@ function StarRecipes() {
                     ? `${recipe.area} - ${recipe.category}` : recipe.alcoholicOrNot}
                 </p>
                 <Link
-                  to={ `/${recipe
+                  to={ `/recipesAPP/${recipe
                     .type === 'comida' ? 'comidas' : 'bebidas'}/${recipe.id}` }
                 >
                   <h5

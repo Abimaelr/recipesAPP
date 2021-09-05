@@ -25,7 +25,7 @@ function RecomendationsDrink() {
           <div className="recomendations-card-container">
             {recomendationsDrink.slice(0, 2).map((drink, index) => (
               <Link
-                to={ `/bebidas/${drink.idDrink}` }
+                to={ `/recipesAPP/bebidas/${drink.idDrink}` }
                 key={ drink.strDrink }
               >
                 <div
@@ -54,7 +54,7 @@ function RecomendationsDrink() {
         <Carousel.Item>
           <div className="recomendations-card-container">
             {recomendationsDrink.slice(2, four).map((drink, index) => (
-              <Link to={ `/bebidas/${drink.idDrink}` } key={ drink.strDrink }>
+              <Link to={ `/recipesAPP/bebidas/${drink.idDrink}` } key={ drink.strDrink }>
                 <div
                   className="card"
                   data-testid={ `${index + 2}-recomendation-card` }
@@ -81,7 +81,7 @@ function RecomendationsDrink() {
         <Carousel.Item>
           <div className="recomendations-card-container">
             {recomendationsDrink.slice(four, six).map((drink, index) => (
-              <Link to={ `/bebidas/${drink.idDrink}` } key={ drink.strDrink }>
+              <Link to={ `/recipesAPP/bebidas/${drink.idDrink}` } key={ drink.strDrink }>
                 <div
                   className="card"
                   data-testid={ `${index + four}-recomendation-card` }

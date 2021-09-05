@@ -10,7 +10,7 @@ function Footer() {
       <div className="footer">
         <div>
           <a
-            href="/bebidas"
+            href="/recipesAPP/bebidas"
           >
             <img
               className="drink-icon"
@@ -22,7 +22,7 @@ function Footer() {
         </div>
         <div>
           <a
-            href="/explorar"
+            href="/recipesAPP/explorar"
           >
             <img
               className="explore-icon"
@@ -34,7 +34,7 @@ function Footer() {
         </div>
         <div>
           <a
-            href="/comidas"
+            href="/recipesAPP/comidas"
           >
             <img
               className="food-icon"

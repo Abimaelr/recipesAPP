@@ -23,7 +23,7 @@ function FoodExplore() {
       <Header title="Explorar Comidas" />
       <div className="drinkAndFood-exploreButtons-container">
         <div>
-          <Link to="/explorar/comidas/ingredientes">
+          <Link to="/recipesAPP/explorar/comidas/ingredientes">
             <Button
               variant="info"
               className="drinkAndFood-exploreButtons"
@@ -35,7 +35,7 @@ function FoodExplore() {
           </Link>
         </div>
         <div>
-          <Link to="/explorar/comidas/area">
+          <Link to="/recipesAPP/explorar/comidas/area">
             <Button
               variant="info"
               className="drinkAndFood-exploreButtons"
@@ -48,7 +48,7 @@ function FoodExplore() {
         </div>
         <div>
           {item.map((subItem, index) => (
-            <Link key={ index } to={ `/comidas/${subItem.idMeal}` }>
+            <Link key={ index } to={ `/recipesAPP/comidas/${subItem.idMeal}` }>
               <Button
                 variant="info"
                 type="button"

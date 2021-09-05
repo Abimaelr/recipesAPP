@@ -17,7 +17,7 @@ function Header({ title }) {
   }
   return (
     <div className="header-container">
-      <Link to="/perfil">
+      <Link to="/recipesAPP/perfil">
         <img
           className="profile"
           src={ profileIcon }

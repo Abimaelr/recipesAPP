@@ -24,7 +24,7 @@ function RecomendationsMeal() {
         <Carousel.Item>
           <div className="recomendations-card-container">
             {recomendationsMeal.slice(0, 2).map((meal, index) => (
-              <Link to={ `/comidas/${meal.idMeal}` } key={ meal.strMeal }>
+              <Link to={ `/recipesAPP/comidas/${meal.idMeal}` } key={ meal.strMeal }>
                 <div
                   className="card"
                   data-testid={ `${index}-recomendation-card` }
@@ -51,7 +51,7 @@ function RecomendationsMeal() {
         <Carousel.Item>
           <div className="recomendations-card-container">
             {recomendationsMeal.slice(2, four).map((meal, index) => (
-              <Link to={ `/comidas/${meal.idMeal}` } key={ meal.strMeal }>
+              <Link to={ `/recipesAPP/comidas/${meal.idMeal}` } key={ meal.strMeal }>
                 <div
                   className="card"
                   data-testid={ `${index + 2}-recomendation-card` }
@@ -77,7 +77,7 @@ function RecomendationsMeal() {
         <Carousel.Item>
           <div className="recomendations-card-container">
             {recomendationsMeal.slice(four, six).map((meal, index) => (
-              <Link to={ `/comidas/${meal.idMeal}` } key={ meal.strMeal }>
+              <Link to={ `/recipesAPP/comidas/${meal.idMeal}` } key={ meal.strMeal }>
                 <div
                   className="card"
                   data-testid={ `${index + four}-recomendation-card` }

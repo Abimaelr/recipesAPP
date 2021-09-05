@@ -22,7 +22,7 @@ function Explore() {
           >
             <track kind="captions" />
           </video>
-          <Link to="/explorar/comidas" className="explore-food-container">
+          <Link to="/recipesAPP/explorar/comidas" className="explore-food-container">
             <Button
               variant="info"
               type="button"
@@ -43,7 +43,7 @@ function Explore() {
           >
             <track kind="captions" />
           </video>
-          <Link to="/explorar/bebidas" className="explore-drink-container">
+          <Link to="/recipesAPP/explorar/bebidas" className="explore-drink-container">
             <Button
               variant="info"
               type="button"

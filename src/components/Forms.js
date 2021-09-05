@@ -35,7 +35,7 @@ function Forms() {
     localStorage.setItem('cocktailsToken', '1');
     localStorage.setItem('user', JSON.stringify({ email }));
 
-    history.push('/comidas');
+    history.push('/recipesAPP/comidas');
   }
 
   return (

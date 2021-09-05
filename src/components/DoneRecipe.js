@@ -21,7 +21,7 @@ function DoneRecipe({ recipe: {
     <div className="done-align">
       <div className="done-card">
         <div className="done-img-container">
-          <Link to={ `/${type}s/${id}` }>
+          <Link to={ `/recipesAPP/${type}s/${id}` }>
             <img
               src={ image }
               className="done-img"
@@ -38,7 +38,7 @@ function DoneRecipe({ recipe: {
                 : `${alcoholicOrNot} - ${category}`
             }
           </p>
-          <Link to={ `/${type}s/${id}` }>
+          <Link to={ `/recipesAPP/${type}s/${id}` }>
             <h5
               className="done-card-title"
               data-testid={ `${index}-horizontal-name` }

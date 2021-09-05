@@ -91,7 +91,7 @@ function FoodRecipes() {
       <div className="recipesCard-container">
         {(changeFood ? foodPerIngredient : firstMeals).map((meal, index) => (
           <Link
-            to={ `/comidas/${meal.idMeal}` }
+            to={ `/recipesAPP/comidas/${meal.idMeal}` }
             key={ meal.strMeal }
           >
             <div

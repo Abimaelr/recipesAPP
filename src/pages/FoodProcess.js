@@ -151,7 +151,7 @@ function FoodProcess() {
                 { strInstructions }
               </p>
             </div>
-            <Link to="/receitas-feitas">
+            <Link to="/recipesAPP/receitas-feitas">
               <Button
                 variant="info"
                 type="button"

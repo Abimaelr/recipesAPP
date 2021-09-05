@@ -33,7 +33,7 @@ function Search() {
       }
       if (meals.length === ONE) {
         const mealId = meals[0].idMeal;
-        return history.push(`/comidas/${mealId}`);
+        return history.push(`/recipesAPP/comidas/${mealId}`);
       }
       if (meals.length > 0) {
         return setFirstMeals(meals);
@@ -52,7 +52,7 @@ function Search() {
       }
       if (drinks.length === ONE) {
         const drinkId = drinks[0].idDrink;
-        return history.push(`bebidas/${drinkId}`);
+        return history.push(`/recipesAPP/bebidas/${drinkId}`);
       }
       if (drinks.length > 0) {
         return setFirstDrinks(drinks);
@@ -78,19 +78,19 @@ function Search() {
   function submit(ev) {
     ev.preventDefault();
 
-    if (history.location.pathname === '/comidas') {
+    if (history.location.pathname === '/recipesAPP/comidas') {
       return condicao(searchByIngredientsFood,
         searchByNameFood, searchByFirstLetterFood, atalhoFunctionFood);
     }
 
-    if (history.location.pathname === '/bebidas') {
+    if (history.location.pathname === '/recipesAPP/bebidas') {
       return condicao(searchByIngredientsDrink, searchByNameDrink,
         searchByFirstLetterDrink, atalhoFunctionDrink);
     }
   }
 
   function choice() {
-    if (pathname.includes('/comidas')) {
+    if (pathname.includes('/recipesAPP/comidas')) {
       return 'Digite o "Rango" de hoje...';
     }
     return 'Digite a "Birita" de hoje...';

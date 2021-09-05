@@ -62,7 +62,7 @@ function FoodByCountry() {
       <div className="country-card-container">
         {firstMeals.filter((_, index) => index < numOfMeals).map((meal, index) => (
           <Link
-            to={ `/comidas/${meal.idMeal}` }
+            to={ `/recipesAPP/comidas/${meal.idMeal}` }
             key={ meal.strMeal }
           >
             <div

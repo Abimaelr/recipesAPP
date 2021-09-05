@@ -41,7 +41,7 @@ function ExploreDrinkIngredient() {
       <div className="ingredient-container">
         {firstDrinkIngredients.map((ingredient, index) => (
           <Link
-            to="/bebidas"
+            to="/recipesAPP/bebidas"
             key={ index }
           >
             <Card

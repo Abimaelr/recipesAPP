@@ -71,8 +71,8 @@ function Icons(item) {
 
   let originalPath = '';
   if (item.fromHorizontal) {
-    if (item.code.type === 'comida') originalPath = (`/comidas/${item.code.id}`);
-    else originalPath = (`/bebidas/${item.code.id}`);
+    if (item.code.type === 'comida') originalPath = (`/recipesAPP/comidas/${item.code.id}`);
+    else originalPath = (`/recipesAPP/bebidas/${item.code.id}`);
   }
 
   function isFavorite() {
@@ -93,7 +93,7 @@ function Icons(item) {
 
   function copyClipboard() {
     const url = document.URL;
-    navigator.clipboard.writeText(url.replace('/in-progress', ''));
+    navigator.clipboard.writeText(url.replace('/recipesAPP/in-progress', ''));
     setChangeCopy(true);
     setTimeout(() => {
       setChangeCopy(false);
@@ -166,7 +166,7 @@ function Icons(item) {
       </div>
       { (changeCopy
        || historyPage[historyPage
-         .length - 2] === '/receitas-favoritas')
+         .length - 2] === '/recipesAPP/receitas-favoritas')
           && <p className="copyText">Link copiado!</p> }
     </div>
   );

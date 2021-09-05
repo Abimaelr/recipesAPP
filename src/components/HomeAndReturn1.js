@@ -9,7 +9,7 @@ function HomeAndReturn() {
       <div className="homeAndReturn-footer1">
         <div>
           <a
-            href="/comidas"
+            href="/recipesAPP/comidas"
           >
             <img className="home-icon1" src={ home } alt="drink icon" />
           </a>

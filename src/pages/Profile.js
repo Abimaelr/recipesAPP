@@ -34,7 +34,7 @@ function Profile() {
         >
           {getUser ? getUser.email : 'usuario@provedor.com'}
         </h4>
-        <Link to="/receitas-feitas">
+        <Link to="/recipesAPP/receitas-feitas">
           <Button
             variant="info"
             type="button"
@@ -44,7 +44,7 @@ function Profile() {
             Receitas Feitas
           </Button>
         </Link>
-        <Link to="/receitas-favoritas">
+        <Link to="/recipesAPP/receitas-favoritas">
           <Button
             variant="info"
             className="profile-btn"
@@ -54,7 +54,7 @@ function Profile() {
             Receitas Favoritas
           </Button>
         </Link>
-        <Link to="/credits">
+        <Link to="/recipesAPP/credits">
           <Button
             variant="info"
             className="profile-btn"
@@ -63,7 +63,7 @@ function Profile() {
             Credits
           </Button>
         </Link>
-        <Link to="/">
+        <Link to="/recipesAPP/">
           <Button
             variant="danger"
             className="profile-exitBtn"
